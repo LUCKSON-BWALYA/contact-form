@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactly - Modern Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================== HEADER / NAVIGATION ================== -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Contactly</div>
+
+                <button class="menu-btn" aria-label="Toggle menu">☰</button>
+
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================== HOME SECTION ================== -->
+    <section id="home" class="hero animate-on-scroll">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Contactly</h1>
+                <p class="lead">Beautifully simple contact solutions for modern businesses</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                    <a href="#services" class="btn-outline">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== ABOUT SECTION ================== -->
+    <section id="about" class="section animate-on-scroll">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>We are a passionate team dedicated to creating meaningful connections between businesses and their
+                    customers.</p>
+                <p>With years of experience in digital communication and customer experience design, we build tools and
+                    solutions that make contact effortless, beautiful, and effective.</p>
+
+                <div class="stats">
+                    <div class="stat-item animate-on-scroll" style="--delay: 0.1s;">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item animate-on-scroll" style="--delay: 0.2s;">
+                        <span class="stat-number">1200+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item animate-on-scroll" style="--delay: 0.3s;">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== SERVICES SECTION ================== -->
+    <section id="services" class="section bg-light animate-on-scroll">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" style="--delay: 0.1s;">
+                    <div class="service-icon">✉️</div>
+                    <h3>Contact Forms</h3>
+                    <p>Beautiful, responsive and secure contact forms with smart validation</p>
+                </div>
+                <div class="service-card animate-on-scroll" style="--delay: 0.2s;">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Solutions</h3>
+                    <p>Fully mobile-optimized experiences that work perfectly on every device</p>
+                </div>
+                <div class="service-card animate-on-scroll" style="--delay: 0.3s;">
+                    <div class="service-icon">🔗</div>
+                    <h3>API Integration</h3>
+                    <p>Seamless integration with your existing CRM and email marketing tools</p>
+                </div>
+                <div class="service-card animate-on-scroll" style="--delay: 0.4s;">
+                    <div class="service-icon">🎨</div>
+                    <h3>Custom Design</h3>
+                    <p>Unique branded contact experiences that match your visual identity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== CONTACT SECTION ================== -->
+    <section id="contact" class="section animate-on-scroll">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <!-- Dropdown Example -->
+            <div class="dropdown-container">
+                <button class="dropdown-btn">Quick Actions</button>
+                <div class="dropdown-content">
+                    <a href="#">Save as Draft</a>
+                    <a href="#">Preview Message</a>
+                    <a href="#">Request Callback</a>
+                    <a href="#">Schedule Meeting</a>
+                </div>
+            </div>
+
+            <div class="form-container animate-on-scroll" style="--delay: 0.2s;">
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="How can we help you today?"></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+
+                    <div class="success-message" id="successMessage">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== MODAL (optional info) ================== -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">×</span>
+            <h2>Welcome to Contactly</h2>
+            <p style="margin:1.5rem 0;">
+                A clean, modern single-page contact website with smooth scrolling navigation and animations.
+            </p>
+            <p>Built with vanilla HTML • CSS • JavaScript</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
