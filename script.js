@@ -1,4 +1,4 @@
-// ================== MOBILE MENU ==================
+
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
@@ -6,7 +6,7 @@ menuBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// ================== DROPDOWN MENU ==================
+
 const dropdownBtn = document.querySelector('.dropdown-btn');
 const dropdownContent = document.querySelector('.dropdown-content');
 
@@ -26,12 +26,9 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// ================== MODAL ==================
 const modal = document.getElementById('infoModal');
 const closeModalBtn = document.getElementById('closeModal');
 
-// Note: Removed openModalBtn since there's no trigger in HTML, but you can add one if needed
-// For demo, you can open it via console or add a button
 
 closeModalBtn.addEventListener('click', () => {
     modal.style.display = 'none';
@@ -43,7 +40,7 @@ modal.addEventListener('click', (e) => {
     }
 });
 
-// ================== FORM VALIDATION ==================
+
 const form = document.getElementById('contactForm');
 const successMsg = document.getElementById('successMessage');
 
@@ -98,7 +95,7 @@ form.addEventListener('submit', (e) => {
     }
 });
 
-// ================== SMOOTH SCROLLING ==================
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -118,7 +115,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ================== SCROLL ANIMATIONS ==================
+
 const animateElements = document.querySelectorAll('.animate-on-scroll');
 
 const observerOptions = {
@@ -140,7 +137,6 @@ animateElements.forEach(el => {
     observer.observe(el);
 });
 
-// ================== HEADER SCROLL EFFECT ==================
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
